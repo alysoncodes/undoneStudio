@@ -1,5 +1,3 @@
-/** UNDONE STUDIO **/
-/*this is a test to see what happens */
 /*------------------------------------
  *   VARIABLES
  *------------------------------------*/
@@ -624,7 +622,9 @@ footer a {
 /*------------------------------------
  * PAGES: HOME
  *------------------------------------*/
-
+section[data-section-id="63f533955bd6f896671d2747"]{
+  overflow: hidden;
+}
 
 #block-yui_3_17_2_1_1676944743951_4128 {.image-block-wrapper{
   .imagestyle();
@@ -690,129 +690,179 @@ section.dark{
 /**
 //testimonial section
 
-.list-section-title{
-  color: white !important;
-  padding-bottom: 0!important;
-  p{
-    text-transform: uppercase;
-    font-size: 2rem;
+
+
+/**CENTERED CAROUSEL ARROWS**/
+
+section.dark-bold {
+  .sqs-gallery-design-carousel
+   {
+     
+     a.summary-title-link{
+       font-size: 2rem;
+       line-height: 2.5rem;
+     }
+     div.summary-title{
+       padding-bottom: 2rem !important;
+     }
+
+   @media @desktop {
+
+  .sqs-gallery-controls .previous{
+    text-align:center;
+    position:absolute;
+    left:-25%;
+    width:5em;
+    top:50%;
+    transform:translateY(-50%);
+    margin-right: 0px!important;
+  }
+
+  .sqs-gallery-controls .sqs-disabled {
+    opacity:1;
+  }
+
+.sqs-gallery-controls .previous::after{
+  content: '';
+  //background-color: red;
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f80ee1c19cb65e88e49f36/1677201121111/left+arrow.png');
+  display: block;
+  background-repeat: no-repeat !important;
+  bottom: 0;
+  background-size: contain !important;
+  width: 130px;
+  height: 10px;
+  background-position: left;
+  text-align:left;
+  }
+ /*.sqs-gallery-controls .previous:hover{
+    cursor:pointer;
+  }
+ .sqs-gallery-controls .previous:hover::before{
+    color:black!important;
+     }/**change color upon hover**/
+
+  
+.sqs-gallery-controls .previous::Before{
+  content: 'Kind';
+  font-family: 'essential';
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: .09em;
+  background-repeat: no-repeat !important;
+  bottom: 0;
+  background-size: contain !important;
+  width: 6rem;
+  background-position: left;
+  text-align:center;
+  //background-color: red;
+  padding-bottom: .5em;
+  }
+
+
+ .sqs-gallery-controls .next{
+   text-align:right;
+   right:-20%;
+   position:absolute;
+   width:5em;
+   top:50%;
+   transform:translateY(-50%);
+  }
+
+
+  .sqs-gallery-controls .next::before{
+  
+    content: 'words';
+  //background-color: red;
+    padding-bottom: .5em;
+  font-family: 'essential';
+  text-transform: uppercase;
+  font-weight: normal;
+  //line-height: 2rem !important;
+  letter-spacing: .09em;
+  color:white!important;
+  width: 6rem;
+  background-repeat: no-repeat !important;
+  bottom: 0;
+  background-size: contain !important;
+  width: 6rem;
+  background-position: right !important;
+  text-align:right;
+  }
+     
+.sqs-gallery-controls .next::after{
+  content: '';
+  //background-color: red;
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f80edb36f9364adde9ff3b/1677201115373/right+arrow.png');
+  display: block;
+  background-repeat: no-repeat !important;
+  bottom: 0;
+  background-size: contain !important;
+  width: 130px;
+  height: 10px;
+  background-position: right;
+  text-align:right;
+  }
+ }   
+  /** .sqs-gallery-controls .next:hover{
+    cursor:pointer;
+  }
+  .sqs-gallery-controls .next:hover::before{
+    color:black!important;
+}
+*/
+  
+/**MOBILE CODE**/
+
+  @media @mobile{
+    .sqs-gallery-controls .previous{
+    transform:translateY(-50%);
+    position:absolute;
+    margin:0px;
+    left:0%;
+    bottom:50%;
+    text-align:center;
+  }
+  .sqs-gallery-controls .sqs-disabled {
+    opacity:1;
+  }
+.sqs-gallery-controls .previous::before{
+  content:'\2190';
+  color:black!important;
+  font-size: 1.5em;
+  width: 2em;
+  }
+ .sqs-gallery-controls .previous:hover{
+    cursor:pointer;
+  }
+ .sqs-gallery-controls .previous:hover::before{
+    color:black!important;
+}
+  
+ .sqs-gallery-controls .next{
+    transform:translateY(-50%);
+    position:absolute;
+    margin:0px;
+    right:0%;
+    bottom:50%;
+    text-align:center;
+  }
+  .sqs-gallery-controls .next::before{
+  content:'\2192';
+  color:black!important;
+  font-size: 1.5em;
+  width: 2em;
+  }
+   .sqs-gallery-controls .next:hover{
+    cursor:pointer;
+  }
+  .sqs-gallery-controls .next:hover::before{
+    color:black!important;
+}
+  }
   }
 }
 
-.user-items-list-banner-slideshow__arrow-icon{
-  color: white !important;
-}
-
-.user-items-list-banner-slideshow__arrow-button--right::before{
-  content:"Words";
-  background-image:url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f80edb36f9364adde9ff3b/1677201115373/right+arrow.png');
-    background-size: contain;
-    background-color: red;
-    background-repeat: no-repeat;
-    width:100%;
-    height:130%;
-    position:absolute;
-    background-position:left;
-    top:0;
-    left: 0;
-    color: white;
-    font-family: 'essential';
-  letter-spacing: .2rem;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.user-items-list-banner-slideshow__arrow-button--left::before{
-  content:"Kind";
-  background-image:url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f80ee1c19cb65e88e49f36/1677201121111/left+arrow.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    width:100%;
-    height:130%;
-    position:absolute;
-    background-position:center;
-    top:0;
-    left: 0;
-    color: white;
-    font-family: 'essential';
-  text-transform: uppercase;
-  white-space: nowrap;
-  letter-spacing: .2rem;
-  z-index: 1000 !important;
-}
-.user-items-list-banner-slideshow .user-items-list-banner-slideshow__arrow-button{
-  border-radius: 0;
-}
-
-svg.user-items-list-banner-slideshow__arrow-icon{
-  display: none !important;
-}**/
-
-
-.sqs-block-summary-v2 .summary-block-setting-design-carousel .summary-carousel-pager {
-    width: 100% !important;
-    justify-content: space-between !important;
-    position: absolute;
-    bottom: 50%;
-}
-
-.summary-carousel-pager-next.next{
-   margin: 0px;
-  width: 20%;
-  text-align: right;
-}
-.summary-carousel-pager-previous.previous{
-   margin: 0px !important;
-  width: 50% !important;
-  text-align: left !important;
-  
-}
-  
-.sqs-gallery-controls.previous{
-  left: 0px !important;
-}
-  
-.sqs-block-summary-v2 *{
-  box-sizing: border-box;
-}
-
-.summary-carousel-pager-prev.previous.sqs-disabled:before{
-  content: 'kind';
-  background-color: red;
-  font-family: 'essential';
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 2rem !important;
-  letter-spacing: .09em;
-  visibility: visible;
-  width: auto;
-  height: 16px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-left: 1.5em;
-  padding-bottom: 1em;
-  font-size: clamp(11px,1vw,13px) !important;
-  text-align: left !important;
-}
-
-.summary-carousel-pager-next.next:before{
-  content: 'words';
-  background-color: red;
-  font-family: 'essential';
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 2rem !important;
-  letter-spacing: .09em;
-  visibility: visible;
-  width: auto;
-  height: 16px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-left: 1.5em;
-  padding-bottom: 1em;
-  font-size: clamp(11px,1vw,13px) !important;
-  text-align: left !important;
-}
 
 @media @mobile{
   #block-yui_3_17_2_1_1677255197913_41767{
@@ -831,7 +881,9 @@ svg.user-items-list-banner-slideshow__arrow-icon{
  * PAGES: Services
  *------------------------------------*/
 
-
+section[data-section-id="63f8f07c1343b749ef3d149a"], section[data-section-id="63f8f0727c11837333e71447"], section[data-section-id="63f8f05981dd770933d1c6e9"], section[data-section-id="63f8e547ba5a70137bc07611"]{
+  overflow: hidden;
+}
 
 @media @desktop{
 
@@ -926,7 +978,9 @@ svg.user-items-list-banner-slideshow__arrow-icon{
 /*------------------------------------
  * PAGES: About
  *------------------------------------*/
-
+section[data-section-id="63f90fd5164a684657d1995b"]{
+  overflow: hidden;
+}
 
 #block-yui_3_17_2_1_1677268105660_13949{.image-block-wrapper{
   .imagestyle();
@@ -998,5 +1052,3 @@ section .sticky {
     text-align: center;
   }
 }
-
-

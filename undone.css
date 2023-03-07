@@ -622,7 +622,7 @@ footer a {
 /*------------------------------------
  * PAGES: HOME
  *------------------------------------*/
-section[data-section-id="63f533955bd6f896671d2747"]{
+section[data-section-id="63f533955bd6f896671d2747"], section[data-section-id="6401399c46ffd931182cd722"]{
   overflow: hidden;
 }
 
@@ -641,7 +641,7 @@ section[data-section-id="63f52f698552d96a2902c280"]{
 }
 section.dark{
 .sqs-gallery-design-strip-slide{
-  height: 115% !important;
+  height: 105% !important;
 }
 .sqs-gallery.sqs-gallery-design-strip{
   
@@ -672,11 +672,20 @@ section.dark{
     //padding-left: 30px;
   }
    img:nth-child(6){
-    transform: translateY(-20%) scale(110%);
-    padding-left: 30px;
+    transform: translateY(-20%);
+    //padding-left: 30px;
      
   }
-
+ img:nth-child(7){
+    transform: translateY(10%);
+    //padding-left: 70px;
+     
+  }
+  img:nth-child(8){
+    transform: translateY(-20%);
+   // padding-left: 30px;
+     
+  }
 }
 
 .sqs-gallery.sqs-gallery-design-strip{
@@ -862,7 +871,12 @@ section.dark-bold {
   }
   }
 }
+@media @desktop{
+  .summary-excerpt.summary-excerpt-only p{
+    font-size: 1.2rem;
+  }
 
+}
 
 @media @mobile{
   #block-yui_3_17_2_1_1677255197913_41767{
@@ -888,7 +902,7 @@ section[data-section-id="63f8f07c1343b749ef3d149a"], section[data-section-id="63
 @media @desktop{
 
 #span2:hover::before{
-  background: url(https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f905cd257f4734241747eb/1677264336592/Undone_0101.png);
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/64078b2b46129211490c9de4/1678215980705/creativedirection.jpeg');
   content: '';
   height:22vw;
   width: 17vw;
@@ -905,7 +919,7 @@ section[data-section-id="63f8f07c1343b749ef3d149a"], section[data-section-id="63
 }
 
 #span3:hover::before{
-  background: url(https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f90d012e11394e2e144309/1677266177383/Alisa_0103.png);
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/64078b0714bd6d5c8a801d73/1678215943992/copywriting.jpeg');
   content: '';
   height:22vw;
   width: 17vw;
@@ -922,7 +936,7 @@ section[data-section-id="63f8f07c1343b749ef3d149a"], section[data-section-id="63
 }
 
 #span4:hover::before{
-  background: url(https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f90d3349de9835cd921b67/1677266227418/Alisa_0104.png);
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/64078b4cbd2a2a70ecc09c3a/1678216013310/production.jpg');
   content: '';
   height:22vw;
   width: 17vw;
@@ -939,7 +953,7 @@ section[data-section-id="63f8f07c1343b749ef3d149a"], section[data-section-id="63
 }
 
 #span5:hover::before{
-  background: url(https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f90df6b5b57962f3a2010f/1677266423009/Alisa_0245.png);
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/64078b7567ae4c0e20cabdf7/1678216054502/video.jpg');
   content: '';
   height:22vw;
   width: 17vw;

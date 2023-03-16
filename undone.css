@@ -4,7 +4,6 @@
 
 /**GLOBAL COLORS**/
 
-
 @dark: #222011;
 @light: #F7F4F1;
 @green: #999884;
@@ -28,7 +27,7 @@
  *------------------------------------*/
 .imagestyle{
   	border: 1px solid #F7F4F1;
-    border-radius: 28px;
+    border-radius: 33px;
 }
 
 .bold{
@@ -287,7 +286,22 @@ h4.addArrow:after{
   top: 0%;
   transform: scale(1) translateY(40%);
 }
-
+@media @mobile{
+  h4.addArrow:after{
+  content: '';
+  //background-color: red;
+  width: 10%;
+  height: 15vw;
+  position: relative;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  display: inline-block;
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f8f3ba034f3935c2fa4abe/1677259706647/arrow+down.png');
+  top: 0%;
+  transform: scale(1) translateY(40%);
+}
+  
+}
 //adding arrow after some links
 
 h4.addArrow2:after{
@@ -304,7 +318,22 @@ h4.addArrow2:after{
   transform: scale(1) translateY(40%);
 }
 
+@media @mobile{
+  h4.addArrow2:after{
+  content: '';
+  //background-color: red;
+  width: 10%;
+  height: 10vw;
+  position: relative;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  display: inline-block;
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f92a911ef7b112511f6fff/1677273745077/WHITE.png');
+  top: 0%;
+  transform: scale(1) translateY(40%);
+}
 
+}
 //DEFINE KEYFRAMES
 
 @keyframes RotateLogo {
@@ -354,7 +383,13 @@ h4.addArrow2:after{
   transform-origin:0% 50%;
 }
 div.center-align {
-  text-align: center 
+  text-align: center ;
+}
+
+@media @mobile{
+  div.mobileCenter{
+    text-align: center ;
+  }
 }
 
 //button styling (black)
@@ -404,7 +439,7 @@ display:block !important;
 
 //FIX IG ISSUE
 
-#REPLACE_BLOCK_ID{img.loaded{
+#block-yui_3_17_2_1_1677213676623_29785{img.loaded{
   top: 0!important;
   }}
 .sqs-gallery-design-strip-slide img{
@@ -425,6 +460,15 @@ display:block !important;
 /*------------------------------------
  *  HEADER
  *------------------------------------*/
+//mobile menu 
+
+.header-menu-nav-folder-content{
+  a{
+    font-family: 'darkparadiseitalic';
+  }
+}
+
+
 //styling of content on POPONE
 section[data-section-id="63f3df350e124f3e2278829b"]{
   .image-block{
@@ -434,6 +478,10 @@ section[data-section-id="63f3df350e124f3e2278829b"]{
   }
   a{
     text-decoration: none !important;
+  }
+  h4 a{
+    font-size: 1vw;
+    white-space: nowrap;
   }
   }
 
@@ -582,10 +630,10 @@ height:100%;}
 
 
 //hide popout menu on mobile, most tablets
+
 @media only screen and (max-width: 1024px) and (pointer: coarse), screen and (max-width: 799px) {.nav2
 {display:none;}
 }
-
 /*------------------------------------
  *  FOOTER
  *------------------------------------*/
@@ -617,6 +665,17 @@ footer a {
 @media @mobile{
   #block-yui_3_17_2_1_1677213676623_12092{
     scale: 50%;
+  }
+  .social-icon-alignment-right .sqs-svg-icon--list{
+    text-align: center !important;
+  }
+  
+
+  .sqs-block-instagram .sqs-gallery-design-strip{
+    height: 20vh;
+  }
+  #block-yui_3_17_2_1_1677213676623_29785{
+    height: 20vh;
   }
 }
 /*------------------------------------
@@ -694,6 +753,22 @@ section.dark{
 }
 .photo-text h2{
   margin-top: 0;
+}
+
+@media @mobile{ #block-yui_3_17_2_1_1677013504181_109004{
+  .photo-text h2.italic {
+    font-size: 40vw !important;
+    white-space: nowrap;
+  }
+  .photo-text h1 {
+    font-size: 35vw !important;
+    white-space: nowrap;
+  }
+  .photo-text img{
+    width: 100vw !important;
+    height: 100px!important;
+  }
+}
 }
 
 /**
@@ -820,7 +895,9 @@ section.dark-bold {
     color:black!important;
 }
 */
-  
+  .sqs-gallery-controls .previous:focus, .sqs-gallery-controls .next:focus {
+outline-width:0 !important;
+}
 /**MOBILE CODE**/
 
   @media @mobile{
@@ -841,12 +918,7 @@ section.dark-bold {
   font-size: 1.5em;
   width: 2em;
   }
- .sqs-gallery-controls .previous:hover{
-    cursor:pointer;
-  }
- .sqs-gallery-controls .previous:hover::before{
-    color:@dark!important;
-}
+
   
  .sqs-gallery-controls .next{
     transform:translateY(-50%);
@@ -862,13 +934,110 @@ section.dark-bold {
   font-size: 1.5em;
   width: 2em;
   }
-   .sqs-gallery-controls .next:hover{
+  
+  }
+     
+     /* TABLET */
+     @media @tablet{
+      .sqs-gallery-controls .previous{
+    text-align:center;
+    position:absolute;
+    left:-25%;
+    width:5em;
+    top:50%;
+    transform:translateY(-50%);
+    margin-right: 0px!important;
+  }
+
+  .sqs-gallery-controls .sqs-disabled {
+    opacity:1;
+  }
+
+.sqs-gallery-controls .previous::after{
+  content: '';
+  //background-color: red;
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f80ee1c19cb65e88e49f36/1677201121111/left+arrow.png');
+  display: block;
+  background-repeat: no-repeat !important;
+  bottom: 0;
+  background-size: contain !important;
+  width: 130px;
+  height: 10px;
+  background-position: left;
+  text-align:left;
+  }
+ /*.sqs-gallery-controls .previous:hover{
     cursor:pointer;
   }
-  .sqs-gallery-controls .next:hover::before{
-    color:@dark!important;
-}
+ .sqs-gallery-controls .previous:hover::before{
+    color:black!important;
+     }/**change color upon hover**/
+
+  
+.sqs-gallery-controls .previous::Before{
+  content: 'Kind';
+  font-family: 'essential';
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: .09em;
+  background-repeat: no-repeat !important;
+  bottom: 0;
+  background-size: contain !important;
+  width: 6rem;
+  background-position: left;
+  text-align:center;
+  //background-color: red;
+  padding-bottom: .5em;
   }
+
+
+ .sqs-gallery-controls .next{
+   text-align:right;
+   right:-20%;
+   position:absolute;
+   width:5em;
+   top:50%;
+   transform:translateY(-50%);
+  }
+
+
+  .sqs-gallery-controls .next::before{
+  
+    content: 'words';
+  //background-color: red;
+    padding-bottom: .5em;
+  font-family: 'essential';
+  text-transform: uppercase;
+  font-weight: normal;
+  //line-height: 2rem !important;
+  letter-spacing: .09em;
+  color:white!important;
+  width: 6rem;
+  background-repeat: no-repeat !important;
+  bottom: 0;
+  background-size: contain !important;
+  width: 6rem;
+  background-position: right !important;
+  text-align:right;
+  }
+     
+.sqs-gallery-controls .next::after{
+  content: '';
+  //background-color: red;
+  background: url('https://static1.squarespace.com/static/63b30ec8d86cc20dd14fa152/t/63f80edb36f9364adde9ff3b/1677201115373/right+arrow.png');
+  display: block;
+  background-repeat: no-repeat !important;
+  bottom: 0;
+  background-size: contain !important;
+  width: 130px;
+  height: 10px;
+  background-position: right;
+  text-align:right;
+  }
+ }   
+     
+     
+     
   }
 }
 @media @desktop{
@@ -1042,6 +1211,13 @@ section[data-section-id="63f9100532dc6134ddc0b5ff"]:before{
 /*------------------------------------
  * PAGES: the work
  *------------------------------------*/
+
+//temp hiding sections 
+
+section[data-section-id="63f92fc00c0e51359a040f91"], section[data-section-id="63f92fc671cfb96a9769ed67"]{
+  display: none;
+}
+
 
 section .sticky {
  

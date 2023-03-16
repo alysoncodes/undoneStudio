@@ -677,6 +677,12 @@ footer a {
   #block-yui_3_17_2_1_1677213676623_29785{
     height: 20vh;
   }
+  #block-63f83ffc3d153320fe44b6e4{
+    h3{
+      font-size: 3rem;
+    }
+  }
+  
 }
 /*------------------------------------
  * PAGES: HOME
@@ -755,7 +761,7 @@ section.dark{
   margin-top: 0;
 }
 
-@media @mobile{ #block-yui_3_17_2_1_1677013504181_109004{
+@media @mobile{ #block-yui_3_17_2_1_1677013504181_109004, #block-c7a51c7d19c6ff05057a{
   .photo-text h2.italic {
     font-size: 40vw !important;
     white-space: nowrap;
@@ -767,8 +773,29 @@ section.dark{
   .photo-text img{
     width: 100vw !important;
     height: 100px!important;
+    margin: 0 auto !important;
   }
 }
+  
+  .photo-text.mobile{
+    h2.italic{
+      font-size: 25vw !important;
+    white-space: nowrap;
+    }
+    img{
+      width: 80vw !important;
+    height: 100px!important;
+    margin: 2vw!important;
+    }
+    h1 {
+    font-size: 25vw !important;
+    white-space: nowrap;
+  }
+    img#hide {
+      display: none !important;
+    }
+  }
+  
 }
 
 /**

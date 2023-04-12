@@ -1,3 +1,12 @@
+/* fixes */
+
+/**fixing sticky section hiding on tablet/safari**/
+body:not(.sqs-edit-mode) {
+  #sections .page-section {
+    transform: translate3d(0,0,0) !important
+}
+}
+
 /*------------------------------------
  *   VARIABLES
  *------------------------------------*/
@@ -472,9 +481,9 @@ display:block !important;
 //styling of content on POPONE
 section[data-section-id="63f3df350e124f3e2278829b"]{
   .image-block{
-    overflow: hidden;
+    overflow: hidden !important;
     border:1px solid #F7F4F1;
-    border-radius: 28px;
+    border-radius: 28px !important;
   }
   a{
     text-decoration: none !important;
@@ -489,22 +498,43 @@ section[data-section-id="63f3df350e124f3e2278829b"]{
   .sqs-image{
     
     transition: 0.5s all ease-in-out;
+    border-radius:28px;
+  }
+  img{
+    overflow: hidden;
     
   }
+  .image-block-outer-wrapper {
+overflow:hidden !important;
+border-radius:28px !important;
+}
 }
 
+/**
 section[data-section-id="63f3df350e124f3e2278829b"]{
   .sqs-image:hover{
     transform: scale(1.1);
+    overflow:hidden !important;
+border-radius:28px;
   }
+}**/
+section[data-section-id="63f3df350e124f3e2278829b"] .sqs-image:hover img{
+transform:scale(1.1);
+}
+
+section[data-section-id="63f3df350e124f3e2278829b"] .sqs-image:hover img{
+transition:0.5s;
 }
 
 #block-yui_3_17_2_1_1676930526560_17596{
   border: none;
-  transform: initial;
+  transform: initial !important;
   .sqs-image{
   border: none;
-  transform: initial;
+  transform: initial !important;
+  }
+  img{
+    transform: initial !important;
   }
 }
 
